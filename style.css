@@ -1,11 +1,17 @@
 body {
-    background-color: black;
+    background-color: #131417;
     font-family: "Roboto", sans-serif;
+    font-size: 20px;
 }
 
 div>p {
     color: white;
     text-align: center;
+}
+
+span::before {
+    content: "Waiting for something to happen...";
+    animation: text-animation 20s infinite;
 }
 
 .container {
@@ -82,5 +88,52 @@ div>p {
     20% {
         transform: scaleY(1.0);
         -webkit-transform: scaleY(1.0);
+    }
+}
+
+@keyframes text-animation {
+    0% {
+        content: "Waiting for something to happen..."
+    }
+
+    10% {
+        content: "Waiting for something to happen...";
+    }
+
+    20% {
+        content: "You know nothing, Koobay 😇";
+    }
+
+    30% {
+        content: "Strat is a Dumbass 😂";
+    }
+
+    40% {
+        content: "💘 Fraise is awesome 🍓";
+    }
+
+    50% {
+        content: "Tex is looking for a man 👌";
+    }
+
+    60% {
+        content: "Mori is a black cat 🐈";
+    }
+
+    70% {
+        content: "I'm awesome 👍";
+    }
+
+    80% {
+        content: "Still here ?";
+
+    }
+
+    90% {
+        content: "You shouldn't";
+    }
+
+    100% {
+        content: "Go to bed now ...";
     }
 }
